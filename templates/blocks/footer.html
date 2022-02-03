@@ -1,0 +1,27 @@
+<footer>
+	<div class="content-wrapper">
+		<div class="container">
+			<ul class="nav">
+				<li class="nav__item">
+					<a href="{% url 'index_page' %}">Главная</a>
+				</li>
+				<li class="nav__item">
+					<a href="{% url 'maintenance_page' %}">Каталог</a>
+				</li>
+				<li class="nav__item">
+					<a href="{% url 'maintenance_page' %}">О нас</a>
+				</li>
+				<li class="nav__item">
+					<a href="{% url 'maintenance_page' %}">Производство</a>
+				</li>
+				<li class="nav__item">
+					<a href="{% url 'maintenance_page' %}">Контакты</a>
+				</li>
+			</ul>
+			<div class="contacts">
+				<div class="contacts__item"><a href="tel:{{ phoneRaw }}">{{ phoneReadeble }}</a></div>
+				<div class="contacts__item"><a href="mailto:{{ configuration.email }}">{{ configuration.email }}</a></div>
+			</div>
+		</div>
+	</div>
+</footer>
