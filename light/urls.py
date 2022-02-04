@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(r'admin/', admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
-    path('', include('index.urls'))
+    path(r'', include('index.urls'))
 ]
